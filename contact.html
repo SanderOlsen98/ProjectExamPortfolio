@@ -1,0 +1,108 @@
+<html>
+<head>
+    <title>Olsen's Travel Blog - Contact</title>
+    <meta name="description" content="contact page"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/9f8fc3ed9d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <section class="header1">
+        <nav>
+            <a href="index.html"><img src="images/white_logo_transparent_background.png" alt=""></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="blogspecifics.html">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <div class="contactpage">
+        <h1>Contact Me!</h1>
+        <P>If you scroll down you will be able to contact me directly to my e-mail address</P>
+    </div>
+    <section class="featured">
+        <form id="contactForm">
+            <div>
+                <label>
+                    <h3>Full Name</h3>
+                    <input name="fullName" id="fullName" />
+                </label>
+                <div class="form-error" id="fullNameError">Please enter your first name</div>
+            </div>
+            <div>
+                <label>
+                    <h3>E-Mail</h3>
+                    <input name="email" id="email" />
+                </label>
+                <div class="form-error" id="emailError">Please enter a valid email address</div>
+            </div>
+
+            <div>
+                <label>
+                    <h3>Subject</h3>
+                    <input name="subject" id="subject" />
+                </label>
+                <div class="form-error" id="subjectError">Please enter a valid email address</div>
+            </div>
+            <div>
+                <label>
+                    <h3>Message Content</h3>
+                    <input name="message" id="message" class="input1"/>
+                </label>
+                <div class="form-error" id="messageError">Type your message here</div>
+            </div>
+            <button onclick="alertbox()" class="submit-button">Submit</button>
+        </form>    
+     </section>
+    <section class="post">
+            <div class="row">
+                <div class="post-col">
+                    <img src="images/plane.jpg">
+                </div>
+                <div class="post-col">
+                    <img src="images/hytter.jpg">
+                </div>
+                
+                <div class="post-col">
+                    <img src="images/hengekøye.jpg">
+                </div>
+            </div>
+    </section> 
+    
+    </main>
+    <script src="js/contact.js"></script>  
+    <section class="footer">
+        <p>&copy;Sander Olsen Blog</p></a>
+    </section>
+    <!----JavaScript for toggle menu---->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+        navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+        navLinks.style.right = "-200px";
+        }
+    </script>   
+</body>
+</html>
+
+
+
+
+
+
+

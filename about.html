@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>Olsen's Travel Blog - About</title>
+    <meta name="description" content="About Olsen's Blog"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/9f8fc3ed9d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header1">
+        <nav>
+            <a href="index.html"><img src="images/white_logo_transparent_background.png" alt=""></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="blogspecifics.html">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <h1>About</h1>
+    <section class="about">
+        <p>My name is Sander Lindberg Olsen, 23 years old and I come from Norway. I currently live in Sarpsborg but im moving to Oslo this december 2021. 
+            Finally covid-19 is slowly fading away which results in more traveling and countries and events are opening up. So this will be my website where i regularly update the content
+            to keep you guys updated on what iam doing and what my plans are. This will be a test site in the beggining regarding school but i will try develop this website further in my free time as well.
+        </p>
+    </section>  
+    <section class="footer">
+        <p>&copy;Sander Olsen Blog</p></a>
+    </section>  
+    <!----JavaScript for toggle menu---->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+        navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+        navLinks.style.right = "-200px";
+        }
+    </script>   
+</body>
+</html>
+
+
+
+
+
+
+

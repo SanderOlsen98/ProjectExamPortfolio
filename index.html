@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>Olsen's Travel Blog</title>
+    <meta name="description" content="Home page for Olsen's Blog"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/9f8fc3ed9d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/white_logo_transparent_background.png" alt=""></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Welcome to my Blog</h1>
+            <P>My name is Sander and this is where i will update you on all my adventures.</P>
+            <a href="blogs.html" class="hero-btn">View Posts</a>
+        </div>
+    </section>
+    <section class="image-carousel">
+        <figure>
+            <img src="images/loen.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="images/telt.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="images/wizz.jpg" alt="">
+        </figure>
+        <figure class="selected-image">
+            <img src="images/loen1.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="images/amasone-besseggen.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="images/plane.jpg" alt="">
+        </figure>
+        <figure>
+            <img src="images/meg.jpg" alt="">
+        </figure>
+    </section>
+    <h1>Latest Blog Posts</h1>
+    <section id="featuredAPI" class="featured" class="post-slider">
+    </section>
+    <div class="post-slider">
+        <h1>Trending Posts</h1>
+        <i class="fas fa-chevron-left prev"></i>
+        <i class="fas fa-chevron-right next"></i>
+
+        <div class="post-wrapper" id="latest">
+        </div>
+  
+      </div>
+    <section class="footer">
+        <p>&copy;Sander Olsen Blog</p></a>
+    </section> 
+    <script src="js/carousel.js"></script>
+    <script src="js/images.js"></script>
+    <script src="js/index.js"></script>
+    <!----JavaScript for toggle menu---->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+        navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+        navLinks.style.right = "-200px";
+        }
+    </script>   
+</body>
+</html>
+
+
+
+
+
+
+
