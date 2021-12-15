@@ -1,5 +1,5 @@
 const baseUrl =
-  "https://sanderolsentestsites.one/wp-json/wc/store/products?per_page=100";
+  "http://sanderolsentestsites.one/wp-json/wp/v2/posts?_embed&per_page=100";
 const postContainer = document.querySelector("#specifics");
 
 function hideClass(i) {
@@ -43,10 +43,10 @@ async function getPosts(baseUrl) {
   post.forEach(function (post) {
     postContainer.innerHTML += `
                 <div class="${hideClass(i)}products" class="post">
-                <a href="blogspecifics.html?post=${post.name}">
-                <h3>${post.name}</h3>
-                <p>${post.description}</p>
-                <img src="${post.images[0].src}" class="slider-image">
+                <a href="blogspecifics.html?post=${post.title.rendered}">
+                <h3>${post.title.rendered}</h3>
+                <p>${post.content.rendered}</p>
+                <img src="${post._embedded["wp:featuredmedia"][0].source_url}">
                 </a>
             </div>`;
     i++;
